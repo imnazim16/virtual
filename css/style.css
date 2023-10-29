@@ -798,6 +798,11 @@ h1.ligt-title{font-weight: 300; font-size: 70px}
 .st-1{text-align: center; font-weight: 700;padding-top:6px}
 .gap-btw{gap:100px;text-align: center;}
 .gap-btw img{display: inline-block;}
+.sp-row1{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
 /*footer*/
 footer{
 	background: rgb(157,203,62);

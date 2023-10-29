@@ -69,6 +69,7 @@
 	.cp-wrap .cp-col{padding-left:50px}
 	.cp-wrap p.py-4{padding:15px 0 !important;margin-bottom: 0}
 	.arrow{bottom: 7px;width: 36px;height: 36px;background-size: 100%;}
+	.brand-box:before{display: none}
 }
 @media only screen and (max-width:767px){
 	.values-sec .col{
@@ -129,7 +130,7 @@
 	}
 	.txt-2{padding-right: 130px}
 	.bgimg{width:43%}
-	.gap-btw{gap: 20px}
+	.gap-btw{gap: 60px}
 }
 @media only screen and (max-width:500px){
 	.inner-sec > img {height:400px;object-fit: cover;object-position: center;}
