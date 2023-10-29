@@ -143,9 +143,11 @@
 		width: 50%;
 	}
 	.inner-sec > img{
-		height:500px;
+		height:430px;
 	}
-	.cp-wrap p.py-4{font-size:16px;}
+	.banner.inner-sec .wrapper{padding-top: 25px; align-items: normal;}
+	.inner-sec .cp-wrap p.py-4{font-size:16px;}
+	.inner-sec .cp-wrap h1{margin-bottom: 0}
 }
 @media only screen and (max-width:379px){
 	.sp-row{flex-flow: column;text-align: center;}
