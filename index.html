@@ -1,697 +1,1107 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
 
-	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/responsive.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-	<script src="https://kit.fontawesome.com/e088578515.js" crossorigin="anonymous"></script>
-	<script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.5.1/dist/simpleParallax.min.js"></script>
-</head>
-<body>
-	<div class="mb-menu-wrap">
-		<div class="mb-close">
-			<img src="img/close.svg" alt="">
-		</div>
-		
-		<div class="acnav" role="navigation">
-			<ul class="acnav__list acnav__list--level1">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/e088578515.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.5.1/dist/simpleParallax.min.js"></script>
+  </head>
+  <body>
+    <div class="mb-menu-wrap">
+      <div class="mb-close">
+        <img src="img/close.svg" alt="" />
+      </div>
 
-				<li class="has-children">
-					<div class="acnav__label">
-						About us
-					</div>
-					<ul class="acnav__list acnav__list--level2">
-						<li>
-							<a class="acnav__link acnav__link--level2" href="#">About Virtual Psychologist</a>
-						</li>
-						<li>
-							<a class="acnav__link acnav__link--level2" href="#">About Virtual Psychologist</a>
-						</li>
-					</ul>
-				</li>
-				
-				<li class="has-children">
-					<div class="acnav__label">
-						Our Services
-					</div>
-					<ul class="acnav__list acnav__list--level2">
-						<li class="has-children">
-							<div class="acnav__label acnav__label--level2">
-								Corporate
-							</div>
-							<ul class="acnav__list acnav__list--level3">
-								<li>
-									<a class="acnav__link acnav__link--level3" href="">Virtual Psychologist</a>
-								</li>
-								<li>
-									<a class="acnav__link acnav__link--level3" href="">HopeChat</a>
-								</li>
-								<li>
-									<a class="acnav__link acnav__link--level3" href="">Virtual Psychologist</a>
-								</li>
-								<li>
-									<a class="acnav__link acnav__link--level3" href="">HopeChat</a>
-								</li>
-							</ul>
-						</li>
-						<li class="has-children">
-							<div class="acnav__label acnav__label--level2">
-								Individual
-							</div>
-							<ul class="acnav__list acnav__list--level3">
-								<li>
-									<a class="acnav__link acnav__link--level3" href="">Virtual Psychologist</a>
-								</li>
-								<li>
-									<a class="acnav__link acnav__link--level3" href="">HopeChat</a>
-								</li>
-								<li>
-									<a class="acnav__link acnav__link--level3" href="">Virtual Psychologist</a>
-								</li>
-								<li>
-									<a class="acnav__link acnav__link--level3" href="">HopeChat</a>
-								</li>
-							</ul>
-						</li>
-						<li class="has-children">
-							<div class="acnav__label acnav__label--level2">
-								Wearable Technology
-							</div>
-							<ul class="acnav__list acnav__list--level3">
-								<li>
-									<a class="acnav__link acnav__link--level3" href="">Virtual Psychologist</a>
-								</li>
-								<li>
-									<a class="acnav__link acnav__link--level3" href="">HopeChat</a>
-								</li>
-								<li>
-									<a class="acnav__link acnav__link--level3" href="">Virtual Psychologist</a>
-								</li>
-								<li>
-									<a class="acnav__link acnav__link--level3" href="">HopeChat</a>
-								</li>
-							</ul>
-						</li>
-						<li class="has-children">
-							<div class="acnav__label acnav__label--level2">
-								NDIS
-							</div>
-							<ul class="acnav__list acnav__list--level3">
-								<li>
-									<a class="acnav__link acnav__link--level3" href="">Virtual Psychologist</a>
-								</li>
-								<li>
-									<a class="acnav__link acnav__link--level3" href="">HopeChat</a>
-								</li>
-								<li>
-									<a class="acnav__link acnav__link--level3" href="">Virtual Psychologist</a>
-								</li>
-								<li>
-									<a class="acnav__link acnav__link--level3" href="">HopeChat</a>
-								</li>
-							</ul>
-						</li>
-						<li class="has-children">
-							<div class="acnav__label acnav__label--level2">
-								Government
-							</div>
-							<ul class="acnav__list acnav__list--level3">
-								<li>
-									<a class="acnav__link acnav__link--level3" href="">Virtual Psychologist</a>
-								</li>
-								<li>
-									<a class="acnav__link acnav__link--level3" href="">HopeChat</a>
-								</li>
-								<li>
-									<a class="acnav__link acnav__link--level3" href="">Virtual Psychologist</a>
-								</li>
-								<li>
-									<a class="acnav__link acnav__link--level3" href="">HopeChat</a>
-								</li>
-							</ul>
-						</li>
-						<li class="has-children">
-							<div class="acnav__label acnav__label--level2">
-								International
-							</div>
-							<ul class="acnav__list acnav__list--level3">
-								<li>
-									<a class="acnav__link acnav__link--level3" href="">Virtual Psychologist</a>
-								</li>
-								<li>
-									<a class="acnav__link acnav__link--level3" href="">HopeChat</a>
-								</li>
-								<li>
-									<a class="acnav__link acnav__link--level3" href="">Virtual Psychologist</a>
-								</li>
-								<li>
-									<a class="acnav__link acnav__link--level3" href="">HopeChat</a>
-								</li>
-							</ul>
-						</li>
-						<li class="has-children">
-							<div class="acnav__label acnav__label--level2">
-								Community
-							</div>
-							<ul class="acnav__list acnav__list--level3">
-								<li>
-									<a class="acnav__link acnav__link--level3" href="">Virtual Psychologist</a>
-								</li>
-								<li>
-									<a class="acnav__link acnav__link--level3" href="">HopeChat</a>
-								</li>
-								<li>
-									<a class="acnav__link acnav__link--level3" href="">Virtual Psychologist</a>
-								</li>
-								<li>
-									<a class="acnav__link acnav__link--level3" href="">HopeChat</a>
-								</li>
-							</ul>
-						</li>
-					</ul>
-				</li>
-				
-				<li class="has-children">
-					<div class="acnav__label">
-						Our Partner
-					</div>
-					<ul class="acnav__list acnav__list--level2">
-						<li>
-							<a class="acnav__link acnav__link--level2" href="#">About Virtual Psychologist</a>
-						</li>
-						<li>
-							<a class="acnav__link acnav__link--level2" href="#">About Virtual Psychologist</a>
-						</li>
-					</ul>
-				</li>
-				
-				<li class="has-children">
-					<div class="acnav__label">
-						Our Brands
-					</div>
-					<ul class="acnav__list acnav__list--level2">
-						<li>
-							<a class="acnav__link acnav__link--level2" href="#">About Virtual Psychologist</a>
-						</li>
-						<li>
-							<a class="acnav__link acnav__link--level2" href="#">About Virtual Psychologist</a>
-						</li>
-					</ul>
-				</li>
-			</ul>
-		</div>
-	</div>
-	<header>
-		<div class="wrapper">
-			<div class="tpFlex">
-				<div class="logo">
-					<a href="#">
-						<img src="img/logo.png" alt="">
-					</a>
-				</div>
-				<div class="lft-sec">
-					<nav>
-						<ul>
-							<li>
-								<a href="#">About us</a>
-								<div class="mega-menu">
-									<div class="wrapper">
-										<h3 class="m-title">About us</h3>
-										<div class="row">
-											<div class="col-md-3">
-												<div class="m-box">
-													<img src="img/m-img-8.png" alt="">
-													<div class="mtitle">About Virtual Psychologist</div>
-													<p>Mental health services for those people who want to use ecommerce .</p>
-													<a href="#">Know more</a>
-												</div>
-											</div>
-										</div>
-										<div class="lady-img">
-											<img src="img/layer-3.png" alt="">
-										</div>
-									</div>
-								</div>
-							</li>
-							<li>
-								<a href="#">Our Services</a>
-								<div class="mega-menu">
-									<div class="m-services">
-										 <div class="wrapper">
-										 	<h3 class="m-title">Our Services</h3>
-											<div class="row">
-												<div class="col-md-3">
-													<div class="m-box">
-														<div class="m-level-1">
-															<ul>
-																<li class="active">
-																	<a href="#">Corporate <span>
-																		<img src="img/vector.svg" alt="">
-																	</span></a>
-																	<div class="m-level-2">
-																		<div class="row">
-																			<div class="col-md-4">
-																				<div class="m-box">
-																					<img src="img/m-img-8.png" alt="">
-																					<div class="mtitle">About Virtual Psychologist</div>
-																					<p>Mental health services for those people who want to use ecommerce .</p>
-																					<a href="#">Know more</a>
-																				</div>
-																			</div>
-																			<div class="col-md-4">
-																				<div class="m-box">
-																					<img src="img/m-img-8.png" alt="">
-																					<div class="mtitle">About Virtual Psychologist</div>
-																					<p>Mental health services for those people who want to use ecommerce .</p>
-																					<a href="#">Know more</a>
-																				</div>
-																			</div>
-																		</div>
-																	</div>
-																</li>
-																<li><a href="#">Individual <span>
-																		<img src="img/vector.svg" alt="">
-																	</span></a>
-																	<div class="m-level-2">
-																		<div class="row">
-																			<div class="col-md-4">
-																				<div class="m-box">
-																					<img src="img/m-img-8.png" alt="">
-																					<div class="mtitle">About Virtual Psychologist</div>
-																					<p>Mental health services for those people who want to use ecommerce .</p>
-																					<a href="#">Know more</a>
-																				</div>
-																			</div>
-																			<div class="col-md-4">
-																				<div class="m-box">
-																					<img src="img/m-img-8.png" alt="">
-																					<div class="mtitle">About Virtual Psychologist</div>
-																					<p>Mental health services for those people who want to use ecommerce .</p>
-																					<a href="#">Know more</a>
-																				</div>
-																			</div>
-																		</div>
-																	</div>
-																</li>
-																<li><a href="#">Wearable Technology <span>
-																		<img src="img/vector.svg" alt="">
-																	</span></a></li>
-																<li><a href="#">NDIS <span>
-																		<img src="img/vector.svg" alt="">
-																	</span></a></li>
-																<li><a href="#">Government <span>
-																		<img src="img/vector.svg" alt="">
-																	</span></a></li>
-																<li><a href="#">International <span>
-																		<img src="img/vector.svg" alt="">
-																	</span></a></li>
-																<li><a href="#">Community <span>
-																		<img src="img/vector.svg" alt="">
-																	</span></a></li>
-															</ul>
-														</div>
-													</div>
-												</div>
-												
-											</div>
-										</div>
-									</div>
-								</div>
-							</li>
-							<li>
-								<a href="#">Our Partner</a>
-								<div class="mega-menu">
-									<div class="wrapper">
-										<h3 class="m-title">Our Partner</h3>
-										<div class="row">
-											<div class="col-md-3">
-												<div class="m-box">
-													<img src="img/m-img-8.png" alt="">
-													<div class="mtitle">About Virtual Psychologist</div>
-													<p>Mental health services for those people who want to use ecommerce .</p>
-													<a href="#">Know more</a>
-												</div>
-											</div>
-											<div class="col-md-3">
-												<div class="m-box">
-													<img src="img/m-img-8.png" alt="">
-													<div class="mtitle">About Virtual Psychologist</div>
-													<p>Mental health services for those people who want to use ecommerce .</p>
-													<a href="#">Know more</a>
-												</div>
-											</div>
-											<div class="col-md-3">
-												<div class="m-box">
-													<img src="img/m-img-8.png" alt="">
-													<div class="mtitle">About Virtual Psychologist</div>
-													<p>Mental health services for those people who want to use ecommerce .</p>
-													<a href="#">Know more</a>
-												</div>
-											</div>
-											<div class="col-md-3">
-												<div class="m-box">
-													<img src="img/m-img-8.png" alt="">
-													<div class="mtitle">About Virtual Psychologist</div>
-													<p>Mental health services for those people who want to use ecommerce .</p>
-													<a href="#">Know more</a>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</li>
-							<li>
-								<a href="#">Our Brands</a>
-								<div class="mega-menu">
-									<div class="wrapper">
-										<h3 class="m-title">Our Brands</h3>
-										<div class="row">
-											<div class="col-md-3">
-												<div class="m-box">
-													<img src="img/m-img-8.png" alt="">
-													<div class="mtitle">About Virtual Psychologist</div>
-													<p>Mental health services for those people who want to use ecommerce .</p>
-													<a href="#">Know more</a>
-												</div>
-											</div>
-											<div class="col-md-3">
-												<div class="m-box">
-													<img src="img/m-img-8.png" alt="">
-													<div class="mtitle">About Virtual Psychologist</div>
-													<p>Mental health services for those people who want to use ecommerce .</p>
-													<a href="#">Know more</a>
-												</div>
-											</div>
-											<div class="col-md-3">
-												<div class="m-box">
-													<img src="img/m-img-8.png" alt="">
-													<div class="mtitle">About Virtual Psychologist</div>
-													<p>Mental health services for those people who want to use ecommerce .</p>
-													<a href="#">Know more</a>
-												</div>
-											</div>
-											<div class="col-md-3">
-												<div class="m-box">
-													<img src="img/m-img-8.png" alt="">
-													<div class="mtitle">About Virtual Psychologist</div>
-													<p>Mental health services for those people who want to use ecommerce .</p>
-													<a href="#">Know more</a>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</li>
-						</ul>
-					</nav>
-					<div class="social">
-						<a href="#"><i class="fa-brands fa-square-facebook"></i></a>
-						<a href="#"><i class="fa-brands fa-linkedin"></i></a>
-						<a href="#"><i class="fa-brands fa-square-x-twitter"></i></a>
-					</div>
-				</div>
-			</div>
-			<div class="mb-menu">
-				<img src="img/mb-menu.svg" alt="">
-			</div>
-		</div>
-	</header>
-	<section class="banner">
-		<video muted loop controls preload autoplay autobuffer playsinline>
-		  <source src="img/banner-video.mp4" type="video/mp4">
-		</video>
-		<div class="pst-caption">
-			<div class="wrapper">
-				<div class="cp-wrap">
-					<h1><span>Innovative</span> <br>mental health <br>solutions</h1>
-					<p class="py-4">For organisations wanting to increase employee wellbeing and workplace satisfaction. Services offered via:</p>
-					<div class="row">
-						<div class="col-4">
-							<div class="cp-col">
-								<span><img src="img/ic_outline-message.png" alt=""></span>
-							Text <br>Counselling
-							</div>
-						</div>
-						<div class="col-4">
-							<div class="cp-col">
-								<span><img src="img/tdesign_user-talk-1.png" alt=""></span>
-							Audio <br>Counselling
-							</div>
-						</div>
-						<div class="col-4">
-							<div class="cp-col">
-								<span><img src="img/fluent_video-person-call-32-regular.png" alt=""></span>
-							Video <br>Counselling
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<a class="arrow" href="#scrollto">Arrow</a>
-	</section>
-	<section id="scrollto" class="pd-3 our-partner">
-		<div class="wrapper">
-			<div class="sub-title">Our Partners</div>
-			<h2>We provide innovative mental health services by qualified mental health practitioners to those people in need.</h2>
-			<div class="row justify-content-between">
-				<div class="col-lg-6 px-3 pb-4">
-					<a class="brand-box" href="#">
-						<img src="img/woman-with-hands-together-talking-with-counselor.jpg" alt="">
-						<div class="insd-box">
-							<div class="imgbox"><img src="img/sub-logo1.png" alt=""></div>
-							<div class="title">
-								Mental health services for those people that fall within the Western NSW catchment area, specifically Orange, Forbes, Dubbo, Parkes, Eugowra
-							</div>
-							<span class="circle">
-								<img src="img/iconoir-arrow-tr.png" alt="">
-							</span>
-						</div>
-					</a>
-				</div>
-			    <div class="col-lg-6 px-3">
-			    	<a class="brand-box" href="#">
-				    	<img src="img/woman-with-hands-together-talking-with-counselor.jpg" alt="">
-				    	<div class="insd-box">
-							<div class="imgbox"><img src="img/sub-logo1.png" alt=""></div>
-							<div class="title">
-								Mental health services for those rural families who support Rural Woman Unite and reside in rural Qld.
-							</div>
-							<span class="circle">
-								<img src="img/iconoir-arrow-tr.png" alt="">
-							</span>
-						</div>
-					</a>
-			    </div>
-			</div>
-		</div>
-	</section>
-	<section class="pd-3 our-brand">
-		<div class="wrapper">
-			<div class="col-box-1">
-				<div class="row">
-					<div class="col-lg-4">
-						<div class="sub-title">Our brands</div>
-						<p class="sm-txt">We provide innovative mental health services by qualified mental health practitioners to those people who find mainstream services too embarrassing, too confronting, too inconvenient, or simply not available.</p>
-					</div>
-					<div class="col-lg-8">
-						<h2>We imagine a world where <br><span>anyone</span> can access hope</h2>
-					</div>
-				</div>
-			</div>
-			<div class="col-box-1">
-				<div class="row">
-					<div class="col-lg-7 px-1 pb-2">
-						<a class="partner-glry" href="#">
-							<img class="paroller" src="img/hopechatimage.jpg" alt="">
-							<div class="insd-box">
-								<div class="title">
-									<h4>Mental Health Warrior #MHW</h4>
-									<p>Mental health services for those people who want to use ecommerce to purchase sessions or merchandise for themselves or their family members.</p>
-									<span class="circle">
-										<img src="img/iconoir-arrow-tr.png" alt="">
-									</span>
-								</div>
-							</div>
-						</a>
-					</div>
-					<div class="col-lg-5 px-1 pb-2">
-						<a class="partner-glry" href="#">
-							<img class="paroller1" src="img/hopechatimage.jpg" alt="">
-							<div class="insd-box">
-								<div class="title">
-									<h4>Virtual Psychologist Corporate</h4>
-									<p>Mental health services for those people who want to use ecommerce to purchase sessions or merchandise for themselves or their family members.</p>
-									<span class="circle">
-										<img src="img/iconoir-arrow-tr.png" alt="">
-									</span>
-								</div>
-							</div>
-						</a>
-					</div>
-					<div class="col-lg-5 px-1 pb-2">
-						<a class="partner-glry" href="#">
-							<img class="paroller1" src="img/hopechatimage.jpg" alt="">
-							<div class="insd-box">
-								<div class="title">
-									<h4>Mental Health Warrior #MHW</h4>
-									<p>Mental health services for those people who want to use ecommerce to purchase sessions or merchandise.</p>
-									<span class="circle">
-										<img src="img/iconoir-arrow-tr.png" alt="">
-									</span>
-								</div>
-							</div>
-						</a>
-					</div>
-					<div class="col-lg-7 px-1 pb-2">
-						<a class="partner-glry" href="#">
-							<img class="paroller" src="img/hopechatimage.jpg" alt="">
-							<div class="insd-box">
-								<div class="title">
-									<h4>Mental Health Warrior #MHW</h4>
-									<p>Mental health services for those people who want to use ecommerce to purchase sessions or merchandise for themselves or their family members.</p>
-									<span class="circle">
-										<img src="img/iconoir-arrow-tr.png" alt="">
-									</span>
-								</div>
-							</div>
-						</a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<section class="about-sec">
-		<div class="wrapper">
-			<div class="row">
-				<div class="col-xxl-7 pd-bt-3">
-					<div class="sub-title">About us</div>
-					<h2 class="th-txt-1"><span>Anyone</span> can access hope</h2>
-					<p>We imagine a world where mental health support is literally one text away. Here are some numbers about us</p>
-					<div class="row pt-4">
-						<div class="col-lg-4 col-md-6 pb-2">
-							<div class="insd-bx">
-								<img class="people" src="img/people.png" alt="">
-								<div class="bits">420K</div>
-								<p>People covered <br>globally</p>
-							</div>
-						</div>
-						<div class="col-lg-4 col-md-6 pb-2">
-							<div class="insd-bx">
-								<img class="mobile" src="img/phone.png" alt="">
-								<div class="bits">1.8 M</div>
-								<p>Messages <br>exchanged</p>
-							</div>
-						</div>
-						<div class="col-lg-4 col-md-6 pb-2">
-							<div class="insd-bx">
-								<img class="globe" src="img/globe.png" alt="">
-								<div class="bits">5</div>
-								<p>Countries with <br>active service</p>
-							</div>
-						</div>
-					</div>
-					<div class="py-4 txt-1">
-						<p>"We imagine a world where mental wellbeing support is literally at your fingertips. We offer a solution that enables all organisations to support their teams with an innovative proactive mental health solution. Over the years, we’ve realised that we exist not just to save a life, but to transform it".</p>
-					</div>
-					<div class="py-2 txt-2">
-						<p><strong>Dervla Loughnane</strong> Founder and CEO – Virtual Psychologist & HopeChat <br>B.Soc Sci (Hons), Masters (Psychology)</p>
-					</div>
-					<a href="#" class="linkBtn">Know more</a>
-				</div>
-			</div>
-		</div>
-		<div class="bgimg">
-			<img src="img/layer-3.png" alt="">
-		</div>
-	</section>
-	<section class="values-sec pd-2">
-		<div class="wrapper">
-			<div class="sub-title">Our values</div>
-			<h2>We provide innovative mental health services by qualified mental health practitioners to those people in need.</h2>
-			<div class="row">
-				<div class="col">
-					<div class="insd-box">
-						<img src="img/person-expressing-appreciation-their-workmates.jpg" alt="">
-						<div class="pst-box">
-							<div class="title">Connection</div>
-							<p>We provide and encourage opportunities to connect. We respect and value connection in whatever method or means preferred. We are passionate about caring and connecting with people.</p>
-						</div>
-					</div>
-				</div>
-				<div class="col">
-					<div class="insd-box">
-						<img src="img/african-american-business-woman.jpg" alt="">
-						<div class="pst-box">
-							<div class="title">Empowerment</div>
-							<p>We support everyone to do the best job they are capable of. We want our team to bring their A-game to the table and be the greatest version of themselves. We show that we genuinely care.</p>
-						</div>
-					</div>
-				</div>
-				<div class="col">
-					<div class="insd-box">
-						<img src="img/defocused-smiley-man-holding-smartphone-hands.jpg" alt="">
-						<div class="pst-box">
-							<div class="title">Innovation</div>
-							<p>We use technology to enhance human connection and make the world a better place. We get excited about innovation and technology in mental health. We see what is possible.</p>
-						</div>
-					</div>
-				</div>
-				<div class="col">
-					<div class="insd-box">
-						<img src="img/business-man-working-laptop-cafe.jpg" alt="">
-						<div class="pst-box">
-							<div class="title">Growth</div>
-							<p>We foster an environment that encourages people to flourish and thrive. We know we can always do better and endeavour to challenge the status quo.</p>
-						</div>
-					</div>
-				</div>
-				<div class="col">
-					<div class="insd-box">
-						<img src="img/closeup-diverse-people-joining-their-hands.jpg" alt="">
-						<div class="pst-box">
-							<div class="title">Growth</div>
-							<p>We foster an environment that encourages people to flourish and thrive. We know we can always do better and endeavour to challenge the status quo.</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<footer>
-		<div class="wrapper">
-			<div class="col-lg-6">
-				<div class="ft-logo">
-					<a href="#"><img src="img/wt-logo.png" alt=""></a>
-			    </div>
-			    <h3>Get in touch!</h3>
-			    <p>Feel free to reach out if you want to collaborate with us, or simply have a chat</p>
-			    <div class="ft-address">
-			    	<p><span>Phone:</span> <br><a href="#">Request call back</a></p>
-			    	<p><span>E-mail:</span> <br><a href="mailto:info@virtualpsychologist.com.au">info@virtualpsychologist.com.au</a></p>
-			    	<p><span>Write to us:</span> <br>PO Box 7224,Southport ParkQLD 4215 Australia</p>
-			    </div>
-			    <div class="copy">© 2023, Virtual Psychologist. All rights reserved. | <a href="#">Terms of use</a> | <a href="#">Privacy policy</a></div>
-			</div>
-		</div>
-	</footer>
-	<!-- cookies strip -->
-	<div class="cookies-strip">
-		<div class="wrapper">
-			<div class="sp-row">
-				<div class="sp-col-1">Virtual Psychologist acknowledges the Aboriginal and Torres Strait Islander peoples as the first inhabitants of this nation and the traditional custodians of the lands where we live, learn and work.</div>
-				<div class="sp-col">
-					<a class="ckesBtn" href="#">Close</a>
-				</div>
-			</div>
-		</div>
-	</div>
-	<script type="text/javascript" src="js/custom.js"></script>
-</body>
+      <div class="acnav" role="navigation">
+        <ul class="acnav__list acnav__list--level1">
+          <li class="has-children">
+            <div class="acnav__label">About us</div>
+            <ul class="acnav__list acnav__list--level2">
+              <li>
+                <a class="acnav__link acnav__link--level2" href="#"
+                  >About Virtual Psychologist</a
+                >
+              </li>
+              <li>
+                <a class="acnav__link acnav__link--level2" href="#"
+                  >About Virtual Psychologist</a
+                >
+              </li>
+            </ul>
+          </li>
+
+          <li class="has-children">
+            <div class="acnav__label">Our Services</div>
+            <ul class="acnav__list acnav__list--level2">
+              <li class="has-children">
+                <div class="acnav__label acnav__label--level2">Corporate</div>
+                <ul class="acnav__list acnav__list--level3">
+                  <li>
+                    <a class="acnav__link acnav__link--level3" href=""
+                      >Virtual Psychologist</a
+                    >
+                  </li>
+                  <li>
+                    <a class="acnav__link acnav__link--level3" href=""
+                      >HopeChat</a
+                    >
+                  </li>
+                  <li>
+                    <a class="acnav__link acnav__link--level3" href=""
+                      >Virtual Psychologist</a
+                    >
+                  </li>
+                  <li>
+                    <a class="acnav__link acnav__link--level3" href=""
+                      >HopeChat</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="has-children">
+                <div class="acnav__label acnav__label--level2">Individual</div>
+                <ul class="acnav__list acnav__list--level3">
+                  <li>
+                    <a class="acnav__link acnav__link--level3" href=""
+                      >Virtual Psychologist</a
+                    >
+                  </li>
+                  <li>
+                    <a class="acnav__link acnav__link--level3" href=""
+                      >HopeChat</a
+                    >
+                  </li>
+                  <li>
+                    <a class="acnav__link acnav__link--level3" href=""
+                      >Virtual Psychologist</a
+                    >
+                  </li>
+                  <li>
+                    <a class="acnav__link acnav__link--level3" href=""
+                      >HopeChat</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="has-children">
+                <div class="acnav__label acnav__label--level2">
+                  Wearable Technology
+                </div>
+                <ul class="acnav__list acnav__list--level3">
+                  <li>
+                    <a class="acnav__link acnav__link--level3" href=""
+                      >Virtual Psychologist</a
+                    >
+                  </li>
+                  <li>
+                    <a class="acnav__link acnav__link--level3" href=""
+                      >HopeChat</a
+                    >
+                  </li>
+                  <li>
+                    <a class="acnav__link acnav__link--level3" href=""
+                      >Virtual Psychologist</a
+                    >
+                  </li>
+                  <li>
+                    <a class="acnav__link acnav__link--level3" href=""
+                      >HopeChat</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="has-children">
+                <div class="acnav__label acnav__label--level2">NDIS</div>
+                <ul class="acnav__list acnav__list--level3">
+                  <li>
+                    <a class="acnav__link acnav__link--level3" href=""
+                      >Virtual Psychologist</a
+                    >
+                  </li>
+                  <li>
+                    <a class="acnav__link acnav__link--level3" href=""
+                      >HopeChat</a
+                    >
+                  </li>
+                  <li>
+                    <a class="acnav__link acnav__link--level3" href=""
+                      >Virtual Psychologist</a
+                    >
+                  </li>
+                  <li>
+                    <a class="acnav__link acnav__link--level3" href=""
+                      >HopeChat</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="has-children">
+                <div class="acnav__label acnav__label--level2">Government</div>
+                <ul class="acnav__list acnav__list--level3">
+                  <li>
+                    <a class="acnav__link acnav__link--level3" href=""
+                      >Virtual Psychologist</a
+                    >
+                  </li>
+                  <li>
+                    <a class="acnav__link acnav__link--level3" href=""
+                      >HopeChat</a
+                    >
+                  </li>
+                  <li>
+                    <a class="acnav__link acnav__link--level3" href=""
+                      >Virtual Psychologist</a
+                    >
+                  </li>
+                  <li>
+                    <a class="acnav__link acnav__link--level3" href=""
+                      >HopeChat</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="has-children">
+                <div class="acnav__label acnav__label--level2">
+                  International
+                </div>
+                <ul class="acnav__list acnav__list--level3">
+                  <li>
+                    <a class="acnav__link acnav__link--level3" href=""
+                      >Virtual Psychologist</a
+                    >
+                  </li>
+                  <li>
+                    <a class="acnav__link acnav__link--level3" href=""
+                      >HopeChat</a
+                    >
+                  </li>
+                  <li>
+                    <a class="acnav__link acnav__link--level3" href=""
+                      >Virtual Psychologist</a
+                    >
+                  </li>
+                  <li>
+                    <a class="acnav__link acnav__link--level3" href=""
+                      >HopeChat</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="has-children">
+                <div class="acnav__label acnav__label--level2">Community</div>
+                <ul class="acnav__list acnav__list--level3">
+                  <li>
+                    <a class="acnav__link acnav__link--level3" href=""
+                      >Virtual Psychologist</a
+                    >
+                  </li>
+                  <li>
+                    <a class="acnav__link acnav__link--level3" href=""
+                      >HopeChat</a
+                    >
+                  </li>
+                  <li>
+                    <a class="acnav__link acnav__link--level3" href=""
+                      >Virtual Psychologist</a
+                    >
+                  </li>
+                  <li>
+                    <a class="acnav__link acnav__link--level3" href=""
+                      >HopeChat</a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+
+          <li class="has-children">
+            <div class="acnav__label">Our Partners</div>
+            <ul class="acnav__list acnav__list--level2">
+              <li>
+                <a class="acnav__link acnav__link--level2" href="#"
+                  >About Virtual Psychologist</a
+                >
+              </li>
+              <li>
+                <a class="acnav__link acnav__link--level2" href="#"
+                  >About Virtual Psychologist</a
+                >
+              </li>
+            </ul>
+          </li>
+
+          <li class="has-children">
+            <div class="acnav__label">Our Brands</div>
+            <ul class="acnav__list acnav__list--level2">
+              <li>
+                <a class="acnav__link acnav__link--level2" href="#"
+                  >About Virtual Psychologist</a
+                >
+              </li>
+              <li>
+                <a class="acnav__link acnav__link--level2" href="#"
+                  >About Virtual Psychologist</a
+                >
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <header>
+      <div class="wrapper">
+        <div class="tpFlex">
+          <div class="logo">
+            <a href="#">
+              <img src="img/logo.png" alt="" />
+            </a>
+          </div>
+          <div class="lft-sec">
+            <nav>
+              <ul>
+                <li>
+                  <a href="#">About us</a>
+                  <div class="mega-menu">
+                    <div class="wrapper">
+                      <h3 class="m-title">About us</h3>
+                      <div class="row">
+                        <div class="col-md-3">
+                          <div class="m-box">
+                            <img src="img/m-img-8.png" alt="" />
+                            <div class="mtitle">Virtual Psychologist</div>
+                            <p>
+                              Mental Health services for the Australian
+                              corporate sector that focuses on employee’s mental
+                              wellbeing.
+                            </p>
+                            <a href="#">Know more</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="lady-img">
+                        <img src="img/layer-3.png" alt="" />
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <a href="#">Our Services</a>
+                  <div class="mega-menu">
+                    <div class="m-services">
+                      <div class="wrapper">
+                        <h3 class="m-title">Our Services</h3>
+                        <div class="row">
+                          <div class="col-md-3">
+                            <div class="m-box">
+                              <div class="m-level-1">
+                                <ul>
+                                  <li class="active">
+                                    <a href="#"
+                                      >Corporate
+                                      <span>
+                                        <img
+                                          src="img/vector.svg"
+                                          alt=""
+                                        /> </span
+                                    ></a>
+                                    <div class="m-level-2">
+                                      <div class="row">
+                                        <div class="col-md-4">
+                                          <div class="m-box">
+                                            <img src="img/m-img-8.png" alt="" />
+                                            <div class="mtitle">
+                                              Virtual Psychologist
+                                            </div>
+                                            <p>
+                                              Mental Health services for the
+                                              Australian corporate sector that
+                                              focuses on employee’s mental
+                                              wellbeing.
+                                            </p>
+                                            <a
+                                              href="https://virtualpsychologist.com.au/"
+                                              >Know more</a
+                                            >
+                                          </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                          <div class="m-box">
+                                            <img src="img/m-img-3.png" alt="" />
+                                            <div class="mtitle">HopeChat</div>
+                                            <p>
+                                              A proactive mental wellbeing and
+                                              lifestyle Assessment App for the
+                                              corporate sector.
+                                            </p>
+                                            <a
+                                              href="https://www.hopechat.com.au/"
+                                              >Know more</a
+                                            >
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </li>
+                                  <li>
+                                    <a href="#"
+                                      >Individual
+                                      <span>
+                                        <img
+                                          src="img/vector.svg"
+                                          alt=""
+                                        /> </span
+                                    ></a>
+                                    <div class="m-level-2">
+                                      <div class="row">
+                                        <div class="col-md-4">
+                                          <div class="m-box">
+                                            <img src="img/m-img-2.png" alt="" />
+                                            <div class="mtitle">
+                                              Mental Health Warrior #MHW
+                                            </div>
+                                            <p>
+                                              Mental health services for those
+                                              people who want to use ecommerce.
+                                            </p>
+                                            <a
+                                              href="https://mentalhealthwarrior.com.au/"
+                                              >Know more</a
+                                            >
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </li>
+                                  <li>
+                                    <a href="#"
+                                      >Wearable Technology
+                                      <span>
+                                        <img
+                                          src="img/vector.svg"
+                                          alt=""
+                                        /> </span
+                                    ></a>
+                                    <div class="m-level-2">
+                                      <div class="row">
+                                        <div class="col-md-4">
+                                          <div class="m-box">
+                                            <img src="img/m-img-1.png" alt="" />
+                                            <div class="mtitle">
+                                              Wearable Technology
+                                            </div>
+                                            <p>
+                                              Innovative holistic mental health
+                                              and coaching services using data
+                                              from wearable devices.
+                                            </p>
+                                            <a href="#">Know more</a>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </li>
+
+                                  <li>
+                                    <a href="#"
+                                      >NDIS
+                                      <span>
+                                        <img
+                                          src="img/vector.svg"
+                                          alt=""
+                                        /> </span
+                                    ></a>
+                                    <div class="m-level-2">
+                                      <div class="row">
+                                        <div class="col-md-4">
+                                          <div class="m-box">
+                                            <img src="img/m-img-6.png" alt="" />
+                                            <div class="mtitle">
+                                              National Disability Insurance
+                                              Scheme (NDIS)
+                                            </div>
+                                            <p>
+                                              Psychosocial goal-oriented
+                                              coaching services for NDIS
+                                              participants.
+                                            </p>
+                                            <a href="#">Know more</a>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </li>
+                                  <li>
+                                    <a href="#"
+                                      >Government
+                                      <span>
+                                        <img
+                                          src="img/vector.svg"
+                                          alt=""
+                                        /> </span
+                                    ></a>
+                                    <div class="m-level-2">
+                                      <div class="row">
+                                        <div class="col-md-4">
+                                          <div class="m-box">
+                                            <img src="img/m-img-4.png" alt="" />
+                                            <div class="mtitle">
+                                              Western NSW Mental Health
+                                            </div>
+                                            <p>
+                                              Mental health services for those
+                                              people that fall within the
+                                              Western NSW catchment area.
+                                            </p>
+                                            <a href="#">Know more</a>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </li>
+                                  <li>
+                                    <a href="#"
+                                      >International
+                                      <span>
+                                        <img
+                                          src="img/vector.svg"
+                                          alt=""
+                                        /> </span
+                                    ></a>
+                                    <div class="m-level-2">
+                                      <div class="row">
+                                        <div class="col-md-4">
+                                          <div class="m-box">
+                                            <div class="mtitle">
+                                              United Kingdom
+                                            </div>
+                                            <img
+                                              src="img/m-img-13.png"
+                                              alt=""
+                                            />
+                                            <div class="mtitle">TERC</div>
+                                            <p>
+                                              Provision of mental health
+                                              Technology
+                                            </p>
+                                            <a href="#">Know more</a>
+                                          </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                          <div class="m-box">
+                                            <div class="mtitle">
+                                              Philippines
+                                            </div>
+                                            <img src="img/m-img-3.png" alt="" />
+                                            <div class="mtitle">
+                                              HopeChat VP
+                                            </div>
+                                            <p>
+                                              Mental health services for the
+                                              Philippines corporate sector.
+                                            </p>
+                                            <a href="https://hopechatvp.com/"
+                                              >Know more</a
+                                            >
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </li>
+                                  <li>
+                                    <a href="#"
+                                      >Community
+                                      <span>
+                                        <img
+                                          src="img/vector.svg"
+                                          alt=""
+                                        /> </span
+                                    ></a>
+                                    <div class="m-level-2">
+                                      <div class="row">
+                                        <div class="col-md-4">
+                                          <div class="m-box">
+                                            <img src="img/m-img-5.png" alt="" />
+                                            <div class="mtitle">
+                                              Rural Woman Unite (RWU)
+                                            </div>
+                                            <p>
+                                              Mental health services for those
+                                              rural families who support Rural
+                                              Women Unite.
+                                            </p>
+                                            <a href="#">Know more</a>
+                                          </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                          <div class="m-box">
+                                            <img src="img/m-img-9.png" alt="" />
+                                            <div class="mtitle">
+                                              TLC for Kids
+                                            </div>
+                                            <p>
+                                              Supporting staff and paramedics
+                                              mental wellbeing.
+                                            </p>
+                                            <a href="#">Know more</a>
+                                          </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                          <div class="m-box">
+                                            <img
+                                              src="img/m-img-10.png"
+                                              alt=""
+                                            />
+                                            <div class="mtitle">
+                                              BushED Australia
+                                            </div>
+                                            <p>
+                                              Supporting new mothers in rural
+                                              Australia with their mental
+                                              health.
+                                            </p>
+                                            <a href="#">Know more</a>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <a href="#">Our Partners</a>
+                  <div class="mega-menu">
+                    <div class="wrapper">
+                      <h3 class="m-title">Our Partners</h3>
+                      <div class="row">
+                        <div class="col-md-3">
+                          <div class="m-box">
+                            <img src="img/m-img-4.png" alt="" />
+                            <div class="mtitle">Western NSW Mental Health</div>
+                            <p>
+                              Mental health services for those people that fall
+                              within the Western NSW catchment area.
+                            </p>
+                            <a href="#">Know more</a>
+                          </div>
+                        </div>
+                        <div class="col-md-3">
+                          <div class="m-box">
+                            <img src="img/m-img-5.png" alt="" />
+                            <div class="mtitle">Rural Woman Unite (RWU)</div>
+                            <p>
+                              Mental health services for those rural families
+                              who support Rural Women Unite.
+                            </p>
+                            <a href="#">Know more</a>
+                          </div>
+                        </div>
+                        <div class="col-md-3">
+                          <div class="m-box">
+                            <img src="img/m-img-6.png" alt="" />
+                            <div class="mtitle">
+                              National Disability Insurance Scheme (NDIS)
+                            </div>
+                            <p>
+                              Psychosocial goal- oriented coaching services for
+                              NDIS participants.
+                            </p>
+                            <a href="#">Know more</a>
+                          </div>
+                        </div>
+                        <div class="col-md-3">
+                          <div class="m-box">
+                            <img src="img/m-img-12.png" alt="" />
+                            <div class="mtitle">Cybernetic Shield</div>
+                            <p>
+                              Shielding students from the impact of cyber
+                              bullying.
+                            </p>
+                            <a href="#">Know more</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <a href="#">Our Brands</a>
+                  <div class="mega-menu">
+                    <div class="wrapper">
+                      <h3 class="m-title">Our Brands</h3>
+                      <div class="row">
+                        <div class="col-md-3">
+                          <div class="m-box">
+                            <img src="img/m-img-11.png" alt="" />
+                            <div class="mtitle">
+                              Virtual Psychologist Corporate
+                            </div>
+                            <p>
+                              Mental Health services for the Australian
+                              corporate sector that focuses on employee’s mental
+                              wellbeing.
+                            </p>
+                            <a href="https://virtualpsychologist.com.au/"
+                              >Know more</a
+                            >
+                          </div>
+                        </div>
+                        <div class="col-md-3">
+                          <div class="m-box">
+                            <img src="img/m-img-3.png" alt="" />
+                            <div class="mtitle">HopeChat</div>
+                            <p>
+                              A proactive mental wellbeing and lifestyle
+                              Assessment App for the corporate sector
+                            </p>
+                            <a href="#">Know more</a>
+                          </div>
+                        </div>
+                        <div class="col-md-3">
+                          <div class="m-box">
+                            <img src="img/m-img-2.png" alt="" />
+                            <div class="mtitle">Mental Health Warrior #MHW</div>
+                            <p>
+                              Mental health services for those people who want
+                              to use ecommerce.
+                            </p>
+                            <a href="https://mentalhealthwarrior.com.au/"
+                              >Know more</a
+                            >
+                          </div>
+                        </div>
+                        <div class="col-md-3">
+                          <div class="m-box">
+                            <img src="img/m-img-1.png" alt="" />
+                            <div class="mtitle">Wearable Technology</div>
+                            <p>
+                              Innovative holistic mental health and coaching
+                              services using data from wearable devices
+                            </p>
+                            <a href="#">Know more</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </nav>
+            <div class="social">
+              <a href="https://www.facebook.com/virtualpsychologist/"
+                ><i class="fa-brands fa-square-facebook"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/company/virtual-psychologist-support/mycompany/"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a href="https://www.instagram.com/virtualpsychologist"
+                ><i class="fa-brands fa-square-instagram"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="mb-menu">
+          <img src="img/mb-menu.svg" alt="" />
+        </div>
+      </div>
+    </header>
+    <section class="banner">
+      <video muted loop controls preload autoplay autobuffer playsinline>
+        <source src="img/banner-video.mp4" type="video/mp4" />
+      </video>
+      <div class="pst-caption">
+        <div class="wrapper">
+          <div class="cp-wrap">
+            <h1><span>Innovative</span> <br />mental health <br />solutions</h1>
+            <p class="py-4">
+              For organisations wanting to increase employee wellbeing and
+              workplace satisfaction. Services offered via:
+            </p>
+            <div class="row">
+              <div class="col-4">
+                <div class="cp-col">
+                  <span><img src="img/ic_outline-message.png" alt="" /></span>
+                  Text <br />Counselling
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="cp-col">
+                  <span><img src="img/tdesign_user-talk-1.png" alt="" /></span>
+                  Audio <br />Counselling
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="cp-col">
+                  <span
+                    ><img
+                      src="img/fluent_video-person-call-32-regular.png"
+                      alt=""
+                  /></span>
+                  Video <br />Counselling
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="arrow" href="#scrollto">Arrow</a>
+    </section>
+    <section id="scrollto" class="pd-3 our-partner">
+      <div class="wrapper">
+        <div class="sub-title">Our Partners</div>
+        <h2>
+          We provide innovative mental health services by qualified mental
+          health practitioners to those people in need.
+        </h2>
+        <div class="row justify-content-between">
+          <div class="col-lg-6 px-3 pb-4">
+            <a class="brand-box" href="#">
+              <img
+                src="img/woman-with-hands-together-talking-with-counselor.jpg"
+                alt=""
+              />
+              <div class="insd-box">
+                <div class="imgbox"><img src="img/sub-logo1.png" alt="" /></div>
+                <div class="title">
+                  Mental health services for those people that fall within the
+                  Western NSW catchment area, specifically Orange, Forbes,
+                  Dubbo, Parkes, Eugowra
+                </div>
+                <span class="circle">
+                  <img src="img/iconoir-arrow-tr.png" alt="" />
+                </span>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-6 px-3">
+            <a class="brand-box" href="#">
+              <img src="img/partner2.png" alt="" />
+              <div class="insd-box">
+                <div class="imgbox"><img src="img/sub-logo2.png" alt="" /></div>
+                <div class="title">
+                  Mental health services for those rural families who support
+                  Rural Woman Unite and reside in rural Qld.
+                </div>
+                <span class="circle">
+                  <img src="img/iconoir-arrow-tr.png" alt="" />
+                </span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="pd-3 our-brand">
+      <div class="wrapper">
+        <div class="col-box-1">
+          <div class="row">
+            <div class="col-lg-4">
+              <div class="sub-title">Our brands</div>
+              <p class="sm-txt">
+                We provide innovative mental health services by qualified mental
+                health practitioners to those people who find mainstream
+                services too embarrassing, too confronting, too inconvenient, or
+                simply not available.
+              </p>
+            </div>
+            <div class="col-lg-8">
+              <h2>
+                We imagine a world where <br /><span>anyone</span> can access
+                hope
+              </h2>
+            </div>
+          </div>
+        </div>
+        <div class="col-box-1">
+          <div class="row">
+            <div class="col-lg-7 px-1 pb-2">
+              <a class="partner-glry" href="#">
+                <img class="paroller" src="img/hopechatimage.jpg" alt="" />
+                <div class="insd-box">
+                  <div class="title">
+                    <h4>Mental Health Warrior #MHW</h4>
+                    <p>
+                      Mental health services for those people who want to use
+                      ecommerce to purchase sessions or merchandise for
+                      themselves or their family members.
+                    </p>
+                    <span class="circle">
+                      <img src="img/iconoir-arrow-tr.png" alt="" />
+                    </span>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-lg-5 px-1 pb-2">
+              <a class="partner-glry" href="#">
+                <img class="paroller1" src="img/hopechatimage.jpg" alt="" />
+                <div class="insd-box">
+                  <div class="title">
+                    <h4>Virtual Psychologist Corporate</h4>
+                    <p>
+                      Mental Health services for the Australian corporate sector
+                      that focuses on employees mental wellbeing.
+                    </p>
+                    <span class="circle">
+                      <img src="img/iconoir-arrow-tr.png" alt="" />
+                    </span>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-lg-5 px-1 pb-2">
+              <a class="partner-glry" href="#">
+                <img class="paroller1" src="img/hopechatimage.jpg" alt="" />
+                <div class="insd-box">
+                  <div class="title">
+                    <h4>Wearable Technology</h4>
+                    <p>
+                      Innovative holistic mental health and coaching services
+                      utilising data from wearable devices.
+                    </p>
+                    <span class="circle">
+                      <img src="img/iconoir-arrow-tr.png" alt="" />
+                    </span>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-lg-7 px-1 pb-2">
+              <a class="partner-glry" href="#">
+                <img class="paroller" src="img/hopechatimage.jpg" alt="" />
+                <div class="insd-box">
+                  <div class="title">
+                    <h4>Hopechat</h4>
+                    <p>
+                      A pro-active mental wellbeing and lifestyle Assessment App
+                      for the corporate sector.
+                    </p>
+                    <span class="circle">
+                      <img src="img/iconoir-arrow-tr.png" alt="" />
+                    </span>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="about-sec">
+      <div class="wrapper">
+        <div class="row">
+          <div class="col-xxl-7 pd-bt-3">
+            <div class="sub-title">About us</div>
+            <h2 class="th-txt-1"><span>Anyone</span> can access hope</h2>
+            <p>
+              We imagine a world where mental health support is literally one
+              text away. Here are some numbers about us
+            </p>
+            <div class="row pt-4">
+              <div class="col-lg-4 col-md-6 pb-2">
+                <div class="insd-bx">
+                  <img class="people" src="img/people.png" alt="" />
+                  <div class="bits">420K</div>
+                  <p>People covered <br />globally</p>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 pb-2">
+                <div class="insd-bx">
+                  <img class="mobile" src="img/phone.png" alt="" />
+                  <div class="bits">1.8 M</div>
+                  <p>Messages <br />exchanged</p>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 pb-2">
+                <div class="insd-bx">
+                  <img class="globe" src="img/globe.png" alt="" />
+                  <div class="bits">5</div>
+                  <p>Countries with <br />active service</p>
+                </div>
+              </div>
+            </div>
+            <div class="py-4 txt-1">
+              <p>
+                "We imagine a world where mental wellbeing support is literally
+                at your fingertips. We offer a solution that enables all
+                organisations to support their teams with an innovative
+                proactive mental health solution. Over the years, we’ve realised
+                that we exist not just to save a life, but to transform it".
+              </p>
+            </div>
+            <div class="py-2 txt-2">
+              <p>
+                <strong>Dervla Loughnane</strong> Founder and CEO – Virtual
+                Psychologist & HopeChat <br />B.Soc Sci (Hons), Masters
+                (Psychology)
+              </p>
+            </div>
+            <a href="#" class="linkBtn">Know more</a>
+          </div>
+        </div>
+      </div>
+      <div class="bgimg">
+        <img src="img/layer-3.png" alt="" />
+      </div>
+    </section>
+    <section class="values-sec pd-2">
+      <div class="wrapper">
+        <div class="sub-title">Our values</div>
+        <h2>
+          We provide innovative mental health services by qualified mental
+          health practitioners to those people in need.
+        </h2>
+        <div class="row">
+          <div class="col">
+            <div class="insd-box">
+              <img
+                src="img/person-expressing-appreciation-their-workmates.jpg"
+                alt=""
+              />
+              <div class="pst-box">
+                <div class="title">Connection</div>
+                <p>
+                  We provide and encourage opportunities to connect. We respect
+                  and value connection in whatever method or means preferred. We
+                  are passionate about caring and connecting with people.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="insd-box">
+              <img src="img/african-american-business-woman.jpg" alt="" />
+              <div class="pst-box">
+                <div class="title">Empowerment</div>
+                <p>
+                  We support everyone to do the best job they are capable of. We
+                  want our team to bring their A-game to the table and be the
+                  greatest version of themselves. We show that we genuinely
+                  care.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="insd-box">
+              <img
+                src="img/defocused-smiley-man-holding-smartphone-hands.jpg"
+                alt=""
+              />
+              <div class="pst-box">
+                <div class="title">Innovation</div>
+                <p>
+                  We use technology to enhance human connection and make the
+                  world a better place. We get excited about innovation and
+                  technology in mental health. We see what is possible.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="insd-box">
+              <img src="img/business-man-working-laptop-cafe.jpg" alt="" />
+              <div class="pst-box">
+                <div class="title">Growth</div>
+                <p>
+                  We foster an environment that encourages people to flourish
+                  and thrive. We know we can always do better and endeavour to
+                  challenge the status quo.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="insd-box">
+              <img
+                src="img/closeup-diverse-people-joining-their-hands.jpg"
+                alt=""
+              />
+              <div class="pst-box">
+                <div class="title">Growth</div>
+                <p>
+                  We foster an environment that encourages people to flourish
+                  and thrive. We know we can always do better and endeavour to
+                  challenge the status quo.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="wrapper">
+        <div class="col-lg-6">
+          <div class="ft-logo">
+            <a href="#"><img src="img/wt-logo.png" alt="" /></a>
+          </div>
+          <h3>Get in touch!</h3>
+          <p>
+            Feel free to reach out if you want to collaborate with us, or simply
+            have a chat
+          </p>
+          <div class="ft-address">
+            <p><span>Phone:</span> <br /><a href="#">Request call back</a></p>
+            <p>
+              <span>E-mail:</span> <br /><a
+                href="mailto:info@virtualpsychologist.com.au"
+                >info@virtualpsychologist.com.au</a
+              >
+            </p>
+            <p>
+              <span>Write to us:</span> <br />PO Box 7224,Southport ParkQLD 4215
+              Australia
+            </p>
+          </div>
+          <div class="copy">
+            © 2023, Virtual Psychologist. All rights reserved. |
+            <a href="#">Terms of use</a> | <a href="#">Privacy policy</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- cookies strip -->
+    <div class="cookies-strip">
+      <div class="wrapper">
+        <div class="sp-row">
+          <div class="sp-col-1">
+            Virtual Psychologist acknowledges the Aboriginal and Torres Strait
+            Islander peoples as the first inhabitants of this nation and the
+            traditional custodians of the lands where we live, learn and work.
+          </div>
+          <div class="sp-col">
+            <a class="ckesBtn" href="#">Close</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="js/custom.js"></script>
+  </body>
 </html>
