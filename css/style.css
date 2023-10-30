@@ -363,6 +363,7 @@ nav ul li:hover .mega-menu{
 }
 video::-webkit-media-controls {
   display: none !important;
+  opacity: 1 !important;
 }
 .pst-caption{
 	position: absolute;
