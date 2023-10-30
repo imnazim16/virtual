@@ -362,7 +362,7 @@ nav ul li:hover .mega-menu{
 	width:100%;
 }
 video::-webkit-media-controls {
-  display: none;
+  display: none !important;
 }
 .pst-caption{
 	position: absolute;
@@ -493,6 +493,7 @@ h1.ligt-title{font-weight: 300; font-size: 70px}
 	position: relative;
 	border-radius: 10px;
 	overflow: hidden;
+	height:484px;
 }
 .brand-box:before{
 	content: '';
@@ -521,6 +522,12 @@ h1.ligt-title{font-weight: 300; font-size: 70px}
 .brand-box:hover:after{
 	background: rgb(157,203,62);
     background: linear-gradient(180deg, rgba(157,203,62,0.16859243697478987) 45%, rgba(157,203,62,1) 100%);
+}
+.brand-box > img{
+	object-fit: cover;
+	object-position: center;
+	width:100%;
+	height: 100%;
 }
 .brand-box .insd-box{
 	position: absolute;

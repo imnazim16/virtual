@@ -69,9 +69,15 @@
 	.cp-wrap .cp-col{padding-left:50px}
 	.cp-wrap p.py-4{padding:15px 0 !important;margin-bottom: 0}
 	.arrow{bottom: 7px;width: 36px;height: 36px;background-size: 100%;}
-	.brand-box:before{display: none}
+	.brand-box > img{
+		height: inherit;
+		object-fit: cover;
+		object-position: inherit;
+		width: 100%;
+	}
 }
 @media only screen and (max-width:767px){
+	.brand-box:before{display: none}
 	.values-sec .col{
 		flex: 0 0 auto;
     	width: 100%;
@@ -120,6 +126,9 @@
 	.sp-col-1 {
 	    padding-right: 10px;
 	}
+	.brand-box > img{
+		height: auto;
+	}
 }
 @media only screen and (max-width:639px){
 	.cp-wrap{max-width:100%}
@@ -146,7 +155,11 @@
 	.inner-sec > img{
 		height:430px;
 	}
-	.banner.inner-sec .wrapper{padding-top: 25px; align-items: normal;}
+	.banner.inner-sec .wrapper{
+		padding-top: 0;
+	    align-items: end;
+	    padding-bottom: 55px;
+	}
 	.inner-sec .cp-wrap p.py-4{font-size:16px;}
 	.inner-sec .cp-wrap h1{margin-bottom: 0}
 }
