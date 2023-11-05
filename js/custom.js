@@ -1,4 +1,3 @@
-document.getElementById("hvideo").setAttribute("autoplay", "autoplay");
 
 $(function () {
   $("header")
