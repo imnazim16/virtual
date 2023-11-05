@@ -1,4 +1,4 @@
-@media only screen and (max-width:1367px){
+@media only screen and (max-width:1368px){
 	.brand-box .insd-box .imgbox img{
 		height:80px;
 	}
@@ -6,6 +6,10 @@
 		padding-top: 0;
 	}
 	.m-level-1{margin-right: -3.3%;}
+	.fill-img-text{font-size: 340px}
+	.own-sec .imgbox img{
+		object-fit: fill;
+	}
 }
 @media only screen and (max-width:1281px){
 	.cp-wrap h1{
@@ -33,6 +37,8 @@
 		margin-right: -8.3%;
 	}
 	.sp-col-1{padding-right:70px}
+	.fill-img-text{font-size: 250px}
+	.banner.inner-sec{height: auto;}
 }
 @media only screen and (max-width:1024px){
 	body{padding-top:60px}
@@ -55,6 +61,28 @@
 	.mb-menu, .mb-close{top:13px}
 	.bgimg{width:30%}
 	.p-lft-60{padding-left:0;padding-bottom:20px}
+	.fill-img-text {
+	    font-size: 189px;
+	}
+	h3.heading1 {
+	    font-size: 53px;
+	    font-weight: 400;
+	}
+	.txt-2 br{display: none}
+	.sub-logos-sec .imgbox{padding-top:25px; text-align: center}
+	.sub-logos-sec img{
+		display: inline-block;
+	}
+	.text{font-size: 90px}
+	.benefit-box{background-size: cover}
+	.own-sec .imgbox{
+		height:auto;
+	}
+	.own-sec .imgbox img{
+		object-fit: fill;
+    	height: auto;
+    	width:100%;
+	}
 }
 @media only screen and (max-width:979px){
 	.bgimg{width: 45%;}
@@ -74,6 +102,9 @@
 		object-fit: cover;
 		object-position: inherit;
 		width: 100%;
+	}
+	.profile-sec .insd-box .imgbox{
+		height: 210px;
 	}
 }
 @media only screen and (max-width:767px){
@@ -129,6 +160,40 @@
 	.brand-box > img{
 		height: auto;
 	}
+	.fill-img-text {
+	    font-size: 9rem;
+	}
+	.profile-sec .insd-box .imgbox {
+	    height: 373px;
+	}
+	.profile-sec .insd-box .sm-content {
+	    padding: 20px 0 20px;
+	}
+	.own-sec .imgbox{
+		height: auto;
+	}
+	.title3{
+		font-size: 27px;
+    	margin-bottom: 25px;
+	}
+	.text {
+	    font-size: 50px;
+	}
+	h3.heading1{
+		font-size: 32px;
+	}
+	.benefit-box{
+		padding: 35px;
+	}
+	.ord-1{
+	  order: 1;
+	}
+	.ord-2{
+	  order: 2;
+	}
+	.ord-3{
+		order: 3;
+	}
 }
 @media only screen and (max-width:639px){
 	.cp-wrap{max-width:100%}
@@ -140,6 +205,10 @@
 	.txt-2{padding-right: 130px}
 	.bgimg{width:43%}
 	.gap-btw{gap: 60px}
+	.fill-img-text {
+	    font-size: 5rem;
+	}
+	.benefit-box .cont-bx .txt-2{padding-right: 0}
 }
 @media only screen and (max-width:500px){
 	.inner-sec > img {height:400px;object-fit: cover;object-position: center;}
@@ -152,7 +221,7 @@
 	.cp-wrap .col-4{
 		width: 50%;
 	}
-	.inner-sec > img{
+	.banner.inner-sec{
 		height:430px;
 	}
 	.banner.inner-sec .wrapper{
