@@ -1187,6 +1187,7 @@ footer h3 {
   background: rgba(0, 0, 0, 0.6) !important;
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px) !important;
+  display: none;
 }
 .loader {
   width: 48px;
