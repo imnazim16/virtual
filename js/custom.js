@@ -1,3 +1,5 @@
+document.getElementById("hvideo").setAttribute("autoplay", "autoplay");
+
 $(function () {
   $("header")
     .mouseover(function () {
@@ -10,7 +12,6 @@ $(function () {
     $(".m-level-1 li").removeClass("active");
     $(this).addClass("active");
   });
-  document.getElementById("hvideo").setAttribute("autoplay", "autoplay");
   setTimeout(function(){
     $('.loader-box').fadeOut()
   }, 3000)
