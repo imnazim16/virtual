@@ -955,7 +955,7 @@ h3.heading1 span {
 }
 .own-sec .imgbox img {
   object-fit: fill;
-  height: auto;
+  height: 100%;
   object-position: center;
   display: inline-block;
   vertical-align: top;
