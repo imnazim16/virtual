@@ -961,7 +961,7 @@ h3.heading1 span {
   vertical-align: top;
 }
 .own-sec .imgbox.fix-hgt img{
-  height:100%;
+  height: auto;
 }
 .scrolling {
   width: 100%;
