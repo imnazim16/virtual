@@ -1,4 +1,3 @@
-
 $(function () {
   $("header")
     .mouseover(function () {
@@ -11,9 +10,6 @@ $(function () {
     $(".m-level-1 li").removeClass("active");
     $(this).addClass("active");
   });
-  setTimeout(function(){
-    $('.loader-box').fadeOut()
-  }, 3000)
   const options = {
     root: null,
     rootMargin: "15px",
